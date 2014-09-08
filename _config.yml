@@ -1,0 +1,13 @@
+# Site settings
+title: پی‌نوشت
+email: mo.pooya@gmail.com
+author: پویا
+description: "درباره‌ی وب، تکنولوژی، ایده، استارت‌آپ‌ها و سایر مسائل مورد علاقه‌ام می‌نویسم."
+baseurl: "/"
+#url: "http://py4.github.io/fa"
+google_analytics: 	
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 3
