@@ -8,12 +8,12 @@ layout: default
     {% for post in paginator.posts %}
       <div class="post med-box">
         <div class="sub-box">
-        <a href="{{ post.url | prepend: site.url }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
             <p class="post-meta">
             نوشته‌شده توسط پویا، در تاریخ {{ post.date | date: "%b %-d, %Y" }}
             </p>
           <p class="post-summary">{{ post.summary }}</p>
-          <a class="btn continue" href="{{ post.url | prepend: site.url }}">ادامه‌ی مطلب </a>
+          <a class="btn continue" href="{{ post.url | prepend: site.baseurl }}">ادامه‌ی مطلب </a>
         </div>
       </div>
     {% endfor %}
