@@ -3,8 +3,8 @@ title: پی‌نوشت
 email: mo.pooya@gmail.com
 author: پویا
 description: "درباره‌ی وب، تکنولوژی، ایده، استارت‌آپ‌ها و سایر مسائل مورد علاقه‌ام می‌نویسم."
-baseurl: "/"
-#url: "http://py4.github.io/fa"
+baseurl: "/fa"
+url: "http://py4.github.io"
 google_analytics: 	
 
 # Build settings
