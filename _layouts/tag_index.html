@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <div class="posts">
-    {% for post in paginator.posts %}
-    <div class="post med-box">
+<h2 class="post_title">{{page.title}}</h2>
+<ul>
+  {% for post in site.posts %}
+  {% for tag in post.tags %}
+  {% if tag == page.tag %}
+ <div class="post med-box">
       <div class="sub-box">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
         <p class="post-meta">
@@ -22,11 +22,7 @@ layout: default
         <a class="btn continue" href="{{ post.url | prepend: site.url }}">ادامه‌ی مطلب </a>
       </div>
     </div>
-    {% endfor %}
-  </div>
-
-  {% include pagination.html %}
-
-  
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-</div>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>

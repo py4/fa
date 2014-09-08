@@ -73,12 +73,13 @@ body {
 }
 
 .site-nav a + a {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 .site-nav {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .site-header a:hover,

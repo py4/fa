@@ -1,2 +1,10 @@
 <a href="{{ site.baseurl }}/about/">درباره‌ی من</a> | 
 <a href="{{ site.baseurl }}/feed.xml">خوراک</a>
+<div class="left">
+{% for category in site.categories %}
+					<a href="/category/{{ category | first }}/" class="category">
+						{{ category | first }}  
+					</a> 
+				
+				{% endfor %}
+</div>

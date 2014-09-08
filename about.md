@@ -1,19 +1,10 @@
 ---
 layout: page
-title: About Pixyll
+title: درباره‌ی من
 permalink: /about/
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
-
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
-
-Thanks to the following:
-
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Solarized](http://ethanschoonover.com/solarized)
+من پویا مرادی هستم، داخل ۲۰ سالگی‌‌م و دانشجوی رشته‌ی مهندسی نرم‌افزار دانشگاه تهران ( ورودی ۹۲ ).<br>
+مهارت اصلی‌م توسعه‌ی سرویس‌های وب تحت چهارچوب Ruby on Rails هست و جدا از اینکه به خیلی از شاخه‌های Computer Science علاقه دارم، به موضوعاتی از قبیل وب، تکنولوژی، تجارت‌الکترونیک، ایده‌ها و استارت‌آپ‌ها و ... هم خیلی علاقه دارم و تصمیم دارم که اینجا درباره‌شون بنویسم.<br>
+ تجربه‌ی بلاگ‌نویسی من سابقه‌ی جالبی داره و در صورتی که علاقه داشتید یا کنجکاو بودید می‌تونید شرح‌ش رو در <a href="http://py4.github.io/fa/uncategorized/2014/09/08/first-post/">پست نخست بلاگ‌م</a> بخونید.<br>
+در توییتر با اکانت <a href="http://twitter.com/ibtkm">ibtkm@</a> فعالیت می‌کنم و در صورت نیاز هم می‌تونید به ibtkm2009 روی جیمیل، ایمیل بزنید.
