@@ -128,7 +128,7 @@
   }
 
   .measure {
-    max-width: 48rem;
+    max-width: 52rem;
   }
 
   .measure-narrow {
@@ -869,4 +869,8 @@
 
   a.category {
     margin-left: 10px;
+  }
+
+  .post-main {
+    background-color: white;
   }
