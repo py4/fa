@@ -3,19 +3,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% if page.description %}
-        <meta name="description" content="{{ page.description | truncatewords: 200 | strip_newlines | escape_once }}" />
+    
+    {% if page.title %}
+        {% if page.description %}
+            <meta name="description" content="{{ page.description | truncatewords: 200 | strip_newlines | escape_once }}" />
+        {% else %}
+            <meta name="description" content="{{ content | strip_html | truncatewords: 200 | strip_newlines | escape_once }}" />
+        {% endif %}
     {% else %}
-        <meta name="description" content="{{ content | strip_html | truncatewords: 200 | strip_newlines | escape_once }}" />
+        <meta name="description" content="{{ site.description }}" />
     {% endif %}
     <meta name="author" content="{{ site.author }}">
     {% if page.categories %}<meta name="keywords" content="{{ page.tags | join: ', '}}, {{page.categories | join: ', '}}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/basscss.css" | prepend: site.baseurl }}" type="text/css">
-    <link rel="stylesheet" href="{{ "/css/pixyll.css" | prepend: site.baseurl }}" type="text/css">
-    <link rel="stylesheet" href="{{ "/css/solarized-dark.css" | prepend: site.baseurl }}" type="text/css">
+    <link rel="stylesheet" href="{{ "css/basscss.css" | prepend: site.baseurl }}" type="text/css">
+    <link rel="stylesheet" href="{{ "css/pixyll.css" | prepend: site.baseurl }}" type="text/css">
+    <link rel="stylesheet" href="{{ "css/solarized-dark.css" | prepend: site.baseurl }}" type="text/css">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
