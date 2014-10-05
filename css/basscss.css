@@ -11,6 +11,9 @@
   */
   @font-face{font-family:'nassim';src:url('../fonts/nassim.eot');src:url('../fonts/nassim.eot?#iefix') format('embedded-opentype'),url('../fonts/nassim.woff') format('woff'),url('../fonts/nassim.ttf') format('truetype');font-style:normal;font-weight:normal;}@font-face{font-family:'nassim';src:url('../fonts/nassim-bold.eot');src:url('../fonts/nassim-bold.eot?#iefix') format('embedded-opentype'),url('../fonts/nassim-bold.woff') format('woff'),url('../fonts/nassim-bold.ttf') format('truetype');font-style:normal;font-weight:bold;}
 
+b {
+	font-weight: bold;
+}
   body {
     direction: rtl;
     font-family: 'nassim';
