@@ -5,9 +5,8 @@ layout: default
 <ul>
 	salam
   {% for post in site.posts %}
-  shit
-  {{ post.category }} <br>
-  {% if post.category == 'تحلیل' %}
+  {% for category in post.categories %}
+  {% if category == 'تحلیل' %}
  <div class="post med-box">
       <div class="sub-box">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
@@ -25,5 +24,6 @@ layout: default
       </div>
     </div>
   {% endif %}
+  {% endfor %}
   {% endfor %}
 </ul>
