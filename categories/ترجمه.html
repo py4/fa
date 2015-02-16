@@ -5,7 +5,7 @@ layout: default
 <ul>
   {% for post in site.posts %}
   {% for category in post.categories %}
-  {% if category == 'تحلیل' %}
+  {% if category == 'ترجمه' %}
  <div class="post med-box">
       <div class="sub-box">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
