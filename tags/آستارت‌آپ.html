@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<h2 class="post_title">{{page.title}}</h2>
+<ul>
+  {% for post in site.posts %}
+  {% for tag in post.tags %}
+  {% if tag == 'استارت‌آپ' %}
+ <div class="post med-box">
+      <div class="sub-box">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
+        <p class="post-meta">
+          نوشته‌شده توسط پویا، در تاریخ {{ post.date | date: "%b %-d, %Y" }}
+        </p>
+        <p class="post-summary">
+          {% if post.content contains '<!--more-->' %}
+          {{ post.content | split:'<!--more-->' | first }}...
+          {% else %}
+          <!-- Case for when no excerpt is defined -->
+          {% endif %}
+        </p>
+        <a class="btn continue" href="{{ post.url | prepend: site.baseurl }}">ادامه‌ی مطلب </a>
+      </div>
+    </div>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>
